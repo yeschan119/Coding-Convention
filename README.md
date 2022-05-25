@@ -63,4 +63,28 @@
     }
     ```
   + 함수 선언과 정의
-    + 기본적으로 리턴 타
+    + 기본적으로 리턴 타입과 함수이름, 인자를 같은 줄에 작성하지만, 정해진 가로 줄 길이를 초과할 경우 줄바꿈하여 작성할 수 있다.
+    ```
+    //기본 형식
+    ReturnType FunctionName(Type var1, Type var2)
+    {
+      DoSomething();
+    }
+    
+    // 한줄에 작성하지 못할 경우, 리턴 타입 작성 후 줄바꿈하여 작성한다.
+    ReturnType
+    ReallyLongFunction(Type var1, Type var2, Type var3)
+    {
+      DoSomething();
+    }
+    
+    //진짜 긴 경우
+    ReturnTeyp ReallyLongLongLongFunctionName(
+        Type var1,
+        Type var2,
+        Type var3)
+    {
+      DoSomething();
+    }
+    ```
+    
