@@ -110,5 +110,37 @@
     bool retval = ReallyLongLongLongFunctionName(argument1,
                                                   argument2,
                                                   argument3);
+     ```
+     + 주의 
+      + 여는 괄호는 항상 함수 이름과 같은 줄에 작성한다.
+      + 닫는 괄호는 항상 마지막 인자에 붙여서 작성한다.
+      + 함수 이름과 여는 괄호 사이에는 스페이스를 넣지 않는다.
+      + 괄호와 인자 사이에는 스페이스를 사용한다.
+      + 각 인자 사이에는 스페이스를 사용한다.
+      + 모든 인자들은 가능한 한 정렬되어야 한다.
+      + 인자들이 다음 줄로 이동할 경우 한 줄당 하나의 인자를 작성한다.
+  + 전처리기 지시자가 코드 블럭을 감싸고 있는 경우 닫는 부분 #endif 뒤에 여는 부분에 명시된 조건을 주석으로 표기한다.
     ```
-    
+    if (lopsided_score) {
+    #if DISASTER_PENDING
+      DropEverything();
+    #if NOTIFY
+      Notifyclient();
+    #endif  // NOTIFY
+    #endif  // DISASTER_PENDING
+      BackToNormal();
+    }
+    ```
+  + 가로 공백
+    + 줄 끝에 공백 문자를 두면 같은 파일을 편집하는 다른 사람이 기존의 뒤쪽 공백 문자를 삭제할 경우, 코드 내용의 변경이 없이도 코드 변경이 발생한다.
+  + 중괄호를 이용한 리스트 초기화 시, 중괄호와 괄호 안 내용 사이에는 하나의 스페이스를 넣는다.
+    ```
+    int x[] = { 0, 1, 2 };
+    ```
+  + 조건문/반복문의 키워드와 여는 괄호 사이에는 하나의 스페이스를 넣는다.
+    ```
+    if (condition)
+    switch (var)
+    while (condition)
+    ```
+  
