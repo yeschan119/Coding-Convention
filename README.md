@@ -99,4 +99,16 @@
       + 모든 인자들을 가능한 한 정렬되어야 한다.
       + 인자들이 다음 줄로 이동할 경우 2개의 스페이스 들여쓰기를 사용한다.
       + 인자들이 다음 줄로 이동할 경우 한 줄당 하나의 인자만 작성한다.
-     
+  + 함수 호출
+    + 기본적으로 한 줄로 작성하지만, 정해진 가로 줄 길이를 초과할 경우 줄바꿈하여 작성할 수 있다.
+    ```
+    // 기본 형식
+    bool retval = FunctionName(argument1, argument2, argument3);
+    
+    // 같은 줄에 작성하지 못하는 경우, 첫번째 인자를 제외한 나머지 인자들을 별도의 줄에 작성한다.
+    // 인자의 시작위치는 통일한다.
+    bool retval = ReallyLongLongLongFunctionName(argument1,
+                                                  argument2,
+                                                  argument3);
+    ```
+    
